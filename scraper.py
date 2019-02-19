@@ -16,7 +16,7 @@ print (html)
 
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-print (root.cssselect("div[align='left']")
+print (root.cssselect("div[align='left']"))
 ## 'Root' is creating a new variable
 ## lxml.html is a library that we imported earlier
 ## (html) is the entire contents of the webpage we already scraped
