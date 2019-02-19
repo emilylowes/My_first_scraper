@@ -16,11 +16,11 @@ print (html)
 
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-root.cssselect("div[align='left']")
+print (root.cssselect("div[align='left']")
 ## 'Root' is creating a new variable
 ## lxml.html is a library that we imported earlier
 ## (html) is the entire contents of the webpage we already scraped
-print (root.cssselect("div[align='left']")
+
        
 
 # # Write out to the sqlite database using scraperwiki library
