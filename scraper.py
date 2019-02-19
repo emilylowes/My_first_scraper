@@ -23,6 +23,8 @@ print (root.cssselect("div#footer"))
 ## div is a html tag
 ## cssselect is a function bc it's followed by a bracket
 
+print (root)
+
        
 
 # # Write out to the sqlite database using scraperwiki library
