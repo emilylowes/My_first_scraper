@@ -16,11 +16,12 @@ print (html)
 
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-print (root.cssselect("a"))
+print (root.cssselect("div#footer"))
 ## 'Root' is creating a new variable
 ## lxml.html is a library that we imported earlier
 ## (html) is the entire contents of the webpage we already scraped
 ## div is a html tag
+## cssselect is a function bc it's followed by a bracket
 
        
 
