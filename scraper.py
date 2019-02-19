@@ -27,6 +27,7 @@ print (root.cssselect("a"))
 listofmatches = root.cssselect("a")
 for match in listofmatches:
        print (match)
+       lxml.html.twostring(match)
 
 print (root)
 
