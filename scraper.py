@@ -3,16 +3,26 @@
 # line 4 is importing a library for line 3
 import scraperwiki
 import lxml.html
+## Import defines the content to be scraped
 #
 print("hello")
 # # Read in a page
 html = scraperwiki.scrape("http://foo.com")
-#
+## html is a variable
+## Content in the brackets is a string
 print (html)
+## Code fetches data from foo.com
+## print allows the scraper to fetch and print the code from the string
+
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
-#
+root = lxml.html.fromstring(html)
+root.cssselect("div[align='left']")
+## 'Root' is creating a new variable
+## lxml.html is a library that we imported earlier
+## (html) is the entire contents of the webpage we already scraped
+print (root.cssselect("div[align='left']")
+       
+
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
