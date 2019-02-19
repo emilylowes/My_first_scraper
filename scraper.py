@@ -23,15 +23,21 @@ print (root.cssselect("a"))
 ## div is a html tag
 ## cssselect is a function bc it's followed by a bracket
 
+record = {}
 
 listofmatches = root.cssselect("a")
 for match in listofmatches:
        print (match)
        print (lxml.html.tostring(match))
+       record ["link"] = (lxml.html.tostring(match))
+       print (record)
+       scraperwiki.sqlite.save(unique_keys=["link"],data=[record])
+       
+   
 
 print (root)
 
-       
+   
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
